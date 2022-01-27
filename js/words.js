@@ -12,12 +12,12 @@ for(var i=0; i<changes.length; i++){
   originalWords[attribute] = val;
 }
 
-console.log("words = " + JSON.stringify(originalWords));
-
+// console.log("words = " + JSON.stringify(originalWords));
+console.log("words");
 for(w in words){
   let element = document.querySelectorAll('[change="' + w + '"]');
   if(!!element[0]){
     element[0].innerHTML = words[w];
-    // console.log("= " + element[0].innerHTML);
+    console.log("= " + element[0].innerHTML);
   }
 }
