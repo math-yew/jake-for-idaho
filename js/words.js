@@ -19,5 +19,17 @@ for(w in words){
   if(!!element[0]){
     element[0].innerHTML = words[w];
     console.log("= " + element[0].innerHTML);
+    if(w == "compare-22-h" && !!words[w]){
+      document.getElementsByClassName("hide1")[0].classList.remove("hide1");
+    }
+    if(w == "compare-26-h" && !!words[w]){
+      document.getElementsByClassName("hide2")[0].classList.remove("hide2");
+    }
+    if(w == "compare-30-h" && !!words[w]){
+      document.getElementsByClassName("hide3")[0].classList.remove("hide3");
+    }
+    if(w == "compare-34-h" && !!words[w]){
+      document.getElementsByClassName("hide4")[0].classList.remove("hide4");
+    }
   }
 }
